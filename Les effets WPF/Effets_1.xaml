@@ -1,0 +1,27 @@
+﻿<Window x:Class="Effets_1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Effets_1" Height="300" Width="300">
+    <Grid>
+        <Grid.OpacityMask>
+            <VisualBrush Visual="{Binding ElementName=Shape}" Stretch="None" />
+        </Grid.OpacityMask>
+        <Path x:Name="Shape" 
+        Data="M98.765432,136.43836 L180.41152,1.6438356 262.05761,103.56164 343.7037,
+              21.369863 470.12346,126.57534 596.54321,54.246575 551.76955,231.78082 638.68313,
+              340.27397 528.06584,353.42466 525.4321,478.35616 391.11111,373.15068 285.76132,
+              461.91781 217.28395,350.13699 135.63786,475.06849 114.5679,346.84932 1.3168724,
+              251.50685 140.90535,212.05479 z" 
+        Fill="#FFF8F93F" Stroke="#FFAB6600" Stretch="Fill" />
+        <Path Data="M100.57143,137.83784 L181.55102,4.8648649 262.53061,105.40541 343.5102,
+              24.324324 468.89796,128.10811 594.28571,56.756757 549.87755,231.89189 636.08163,
+              338.91892 526.36735,351.89189 523.7551,475.13514 390.53061,371.35135 286.04082,
+              458.91892 218.12245,348.64865 137.14286,471.89189 116.2449,345.40541 3.9183673,
+              251.35135 142.36735,212.43243 z" 
+         Stroke="#FFAB6600" StrokeThickness="3" Stretch="Fill" >
+            <Path.Effect>
+                <DropShadowEffect ShadowDepth="0" BlurRadius="20" Color="Orange"/>
+            </Path.Effect>
+        </Path>
+    </Grid>
+</Window>
